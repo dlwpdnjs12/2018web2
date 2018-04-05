@@ -37,3 +37,17 @@ section{
     height: auto;
     float: right;
 }
+.cont{
+    height: 30px;
+    width: 200px;
+    background-color: gray;
+    color: white;
+    border-collapse: collapse;
+}
+.cont_1{
+    widows: 200px;
+    height: 30px;
+    float: left;
+    color: gray;
+    border-top: 2px solid black;
+}
