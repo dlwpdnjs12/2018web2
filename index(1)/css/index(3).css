@@ -8,21 +8,22 @@ header{
     height: 100px;
     background-color: black;
 }
-#logo{padding: 20px;}
+#logo{padding: 30px;}
 ul{
     width: 300px;
     height: 100px;
     float: right;
-
 }
+#red{color: red;}
 ul>li{
     width: 100px;
     height: 100px;
     text-align: center;
     line-height: 100px;
     float: left;
-  text-decoration: none;
-
+    color: white;
+    list-style: none;
+    text-decoration: none;
 }
 aside{
     width: 40%;
@@ -71,7 +72,6 @@ button{
     height: 30px;
     font-size: 10px;
 }
-
 td{
     height: 50px;
 }
@@ -83,4 +83,12 @@ td{
 #black{
     color: white;
     background-color: black;
+    height: 40px;
+    font-size: 20px;
+}
+#white{
+  background-color: white;
+  color: black;
+  height: 40px;
+  font-size: 20px;
 }
