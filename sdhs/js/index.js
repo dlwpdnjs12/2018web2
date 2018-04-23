@@ -10,4 +10,6 @@ $(document).ready(function () {
             i=0;
         }
     }setInterval(slide,3000);
+
+
 });
