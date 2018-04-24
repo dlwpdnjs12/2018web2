@@ -3,44 +3,57 @@
 
 header{height: 150px;width: 1000px;}
 #logo{padding: 25px;}
-ul{width: 475px;height: 36px;float: right;padding-top: 30px;}
-ul > .header{ width: 60px;height:36px;text-align: center; line-height: 36px;float: left;border: 1px solid lightgray;font-size: 14px;z-index: 0;}
+.header_top{width: 500px;height: 36px;float: right;padding-top: 30px;}
+ul > .header{ width: 65px;height:36px;text-align: center; line-height: 36px;float: left;border: 1px solid lightgray;font-size: 14px;z-index: 0;}
 ul > #input{float: right;}
 #input{height: 34px;}
 #plus{height: 38px; float: right;}
 
-.head_top{height: 50px;margin-top: -25px;}
-.nav{width: 1000px; height: 45px;border-bottom: 2px solid black; color: black;}
+.nav{width: 1000px; height: 45px;border-top: 2px solid black;border-bottom: 2px solid black; color: black;}
 .nav > li{width: 125px; height: 45px;float: left;text-align: center;line-height: 45px;font-family: 돋음;}
-.nav > li >ul{width: 120px;height: 0px; margin-top: -30px;overflow: hidden;transition: 1.0s;}
+.nav > li >ul{width: 125px;height: 0px;overflow: hidden;transition: 1.0s;}
 .nav > li:hover>ul{height:225px;}
-.nav > li > ul >li{width: 125px;height: 45px; text-align: center;background-color:lightgray;border-collapse: collapse;}
+.nav > li > ul >li{width: 123px;height: 43px; text-align: center;background-color:white;border: 1px solid black;}
+.border{border-bottom-left-radius: 14%;border-bottom-right-radius: 14%;}
 
-.slide_box{width:1000px; height: 450px;position: relative;overflow: hidden;z-index: -1;margin-top: -10px;}
-.slide_box img{width: 1000px; height: 450px;position: absolute;left: -100%;}
+.slide_box{width:1000px; height: 380px;position: relative;overflow: hidden;z-index: -1;}
+.slide_box img{width: 1000px; height: 380px;position: absolute;left: -100%;}
 .slide_box img:first-child{left: 0;}
 section{width: 1000px;height: 830px;}
 
-.content{width: 600px; height: 170px; background-color: ghostwhite; float: left;}
+.content{width: 600px; height: 200px; background-color: ghostwhite; float: left;}
 .more{width: 70px; height: 30px; line-height: 30px; position: absolute; margin-left: 500px;}
-th{float: left; width: 105px; height: 30px; text-align: left; line-height: 30px; cursor:pointer; font-size: 20px;}
+.more > a{color: black;}
+th{float: left; width: 105px; height: 30px; text-align: left; line-height: 30px; cursor:pointer; font-size: 21px;}
 .notice{color: #4171ff;}
-td{height: 24px;}
+td{height: 33px;}
 .notice_sec{width: 500px;}
+.notice_sec > a{color: black;}
 .sec{width: 150px; text-align: center;}
 
-.sub{width: 400px; height: 380px; float: right;}
-.sub > img {width: 400px; height: 380px;}
+.sub{width: 400px; height: 450px; float: right;}
+.sub > img {width: 400px; height: 450px;}
 .sub > p{line-height: 345px; text-align: center; font-size: 40px; background-color: gainsboro;}
 
-.sub_1{height: 210px;width: 600px;float: left;}
+.sub_1{height: 210px;width: 600px;float: left;margin-top: 24px;}
 .meal{float:right;}
 .meal_more{margin-left: 260px;position: absolute;}
 .meal > h3{text-align: center;}
 .meal > p{margin-top:5px;font-size: 18px;text-align: center;}
 .meal > img{margin-left: 15px;}
-.day, .meal{width: 300px;height: 210px;}
-.day > p{text-align: center;margin-top: 10px;}
+.meal{width: 300px;height: 210px;}
 
-footer{background-color: #e5e6e8;width: 1000px;height: 100px;}
-footer > p{text-align: center;line-height: 40px;}
+.date {width: 300px;height: 210px;}
+.date_top {float: left;width: 100%;height: 20px;text-align: center;}
+.date_top > span{margin-left: 10px;font-size: 25px;}
+.calendar_date{font-size: 14px;}
+.date_middle {float: left;width: 100%;height: 145px;}
+.todate{font-size: 90px;width: 100px;float: left;text-align: center;}
+.prev_box {float: left;width: 100px;height: 120px;text-align: center;line-height: 130px;}
+.next_box {float: left;width: 100px;height: 120px;text-align: center;line-height: 125px;}
+.date-footer > p{text-align: center;font-size: 18px;}
+
+
+footer{background-color: #e5e6e8;width: auto;height: 100px;}
+.footer_img{padding: 25px;float: left;margin-left: 450px;}
+.footer_sec{text-align: center;color: black;margin-right: 500px;padding: 25px;}

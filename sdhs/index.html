@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>서울디지텍 고등학교</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/index.js"></script>
@@ -10,8 +10,8 @@
 <body>
 <div class="wrap">
     <header>
-        <a href="#"><img id="logo" src="img/logo.png" alt="로고 이미지"></a>
-        <ul>
+       <img id="logo" src="img/logo.png" alt="로고 이미지">
+        <ul class="header_top">
             <li class="header"><a href="#">사이트맵</a></li>
             <li class="header"><a href="#">홈</a></li>
             <li class="header"><a href="#">로그인</a></li>
@@ -19,7 +19,6 @@
             <input id="plus" type="image" src="img/plus.gif">
             <input id="input" type="text">
         </ul>
-        <div class="head_top">
             <ul class="nav">
                 <li><a href="#">학교소개</a>
                     <ul>
@@ -27,7 +26,7 @@
                         <li>학교장 인사말</li>
                         <li>학교연혁</li>
                         <li>교훈/상징</li>
-                        <li>교육 목표</li>
+                        <li class="border">교육 목표</li>
                     </ul>
                 </li>
                 <li><a href="#">알림마당</a>
@@ -36,7 +35,7 @@
                         <li>가정통신문</li>
                         <li>일정달력</li>
                         <li>특색사업</li>
-                        <li>교내행사영상</li>
+                        <li class="border">교내행사영상</li>
                     </ul>
                 </li>
                 <li><a href="#">입학안내</a>
@@ -45,7 +44,7 @@
                         <li>입학안내블로그</li>
                         <li>학교홍보동영상</li>
                         <li>교복안내</li>
-                        <li>입학문의</li>
+                        <li class="border">입학문의</li>
                     </ul>
                 </li>
                 <li><a href="#">학생마당</a>
@@ -54,7 +53,7 @@
                         <li>학생회 소개</li>
                         <li>방과후학교</li>
                         <li>학생회게시판</li>
-                        <li>학생사진작품</li>
+                        <li class="border">학생사진작품</li>
                     </ul>
                 </li>
                 <li><a href="#">열린마당</a>
@@ -63,7 +62,7 @@
                         <li>취업게시판</li>
                         <li>진학게시판</li>
                         <li>보건게시판</li>
-                        <li>온라인북카페</li>
+                        <li class="border">온라인북카페</li>
                     </ul>
                 </li>
                 <li><a href="#">행정공개</a>
@@ -71,14 +70,14 @@
                         <li>학교운영위원회</li>
                         <li>행정정보공개</li>
                         <li>교사게시판</li>
-                        <li>행정소식</li>
+                        <li class="border">행정소식</li>
                     </ul>
                 </li>
                 <li><a href="#">학교평가</a>
                     <ul>
                         <li>2015학년도</li>
                         <li>2016학년도</li>
-                        <li>2017학년도</li>
+                        <li class="border">2017학년도</li>
                     </ul>
                 </li>
                 <li><a href="#">교사미니홈피</a>
@@ -87,11 +86,10 @@
                         <li>문서현</li>
                         <li>박선갑</li>
                         <li>송창용</li>
-                        <li>이미자</li>
+                        <li class="border">이미자</li>
                     </ul>
                 </li>
             </ul>
-        </div>
     </header>
     <section>
         <div class="slide_box">
@@ -100,7 +98,7 @@
             <img src="img/img3.jpg" alt="슬라이드 이미지">
         </div>
         <div class="content">
-            <a href="#"><div class="more">더보기 ▶</div></a>
+            <div class="more"><a href="#">더보기 ▶</a></div>
             <table>
                 <th class="notice">공지사항</th>
                 <th>가정통신문</th>
@@ -127,21 +125,39 @@
         </div>
         <div class="sub_1">
             <div class="meal">
-                <p class="meal_more"><a href="#">＋</a></p>
+                <a href="#"><img class="meal_more" src="./img/more.png" alt="더보기"></a>
                 <h3>오늘의 급식</h3>
                 <img class="meal_img" src="img/meal.jpg" alt="급식">
                 <p>급식정보가 존재하지 않습니다.</p>
             </div>
-            <div class="day">
-                <p>2018.4</p>
-                    <p>오늘의 일정이 존재하지 않습니다.</p>
+            <div class="date">
+                <div class="date_top">
+                    <span>2018 . 4</span>
+                </div>
+                <div class="date_middle">
+                    <div class="prev_box">
+                        <a href="#" id="prev"><img src="img/netx_1.png" alt="슬라이드" class="calendar_prev" ></a>
+                    </div>
+                    <div class="todate">
+                        <p>24</p>
+                    </div>
+                    <div class="next_box">
+                        <a href="#" id="next"><img src="img/next.png" alt="슬라이드" class="calendar_next"></a>
+                    </div>
+                </div>
+                <div class="date-footer">
+                    <p>오늘 일정은 존재하지 않습니다.</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <p>[0000000]서울 용산구 회나무로12길 27 (이태원동, 서울디지텍고등학교)</p>
-        <p>Copyright(c) 2018 서울디지텍고등학교. All rights reserved.</p>
-    </footer>
 </div>
+<footer>
+    <img class="footer_img" src="./img/logo.png" alt="로고이미지">
+    <div class="footer_sec">
+        <p>주소: 서울 용산구 회나무로12길 27 (이태원동, 서울디지텍고등학교)</p>
+        <p>Copyright(c) 2018 서울디지텍고등학교. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
