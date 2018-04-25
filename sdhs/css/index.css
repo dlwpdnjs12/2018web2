@@ -14,22 +14,24 @@ ul > #input{float: right;}
 .nav > li >ul{width: 125px;height: 0px;overflow: hidden;transition: 1.0s;}
 .nav > li:hover>ul{height:225px;}
 .nav > li > ul >li{width: 123px;height: 43px; text-align: center;background-color:white;border: 1px solid black;}
-.border{border-bottom-left-radius: 14%;border-bottom-right-radius: 14%;}
+.border{border-bottom-left-radius: 15%;border-bottom-right-radius: 15%;}
 
 .slide_box{width:1000px; height: 380px;position: relative;overflow: hidden;z-index: -1;}
 .slide_box img{width: 1000px; height: 380px;position: absolute;left: -100%;}
 .slide_box img:first-child{left: 0;}
 section{width: 1000px;height: 830px;}
 
-.content{width: 600px; height: 200px; background-color: ghostwhite; float: left;}
+.content{width: 600px; height: 200px; background-color: ghostwhite; float: left;position: relative;}
 .more{width: 70px; height: 30px; line-height: 30px; position: absolute; margin-left: 500px;}
 .more > a{color: black;}
 th{float: left; width: 105px; height: 30px; text-align: left; line-height: 30px; cursor:pointer; font-size: 21px;}
-.notice{color: #4171ff;}
+.notice{color: rgb(65, 113, 255);}
 td{height: 33px;}
 .notice_sec{width: 500px;}
 .notice_sec > a{color: black;}
 .sec{width: 150px; text-align: center;}
+.content>table:nth-child(3){display: none;}
+
 
 .sub{width: 400px; height: 450px; float: right;}
 .sub > img {width: 400px; height: 450px;}

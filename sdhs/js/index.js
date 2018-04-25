@@ -11,5 +11,30 @@ $(document).ready(function () {
         }
     }setInterval(slide,3000);
 
+    var to = new Date();
+    var day = to.getDate();
+    var month = to.getMonth();
+    var year = to.getFullYear();
 
+    $(".today").text(day);
+    $(".tomonth").text(month);
+    $(".toyear").text(year);
+
+    $(".notice").click(function () {
+        $(".notice").css({"color" : "rgb(65, 113, 255)"});
+        $(".correspondence").css({"color" : "black;"});
+        $(".notice_1").css({"display" : "block"});
+        $(".notice_2").css({"display" : "none"});
+
+    });
+    $(".correspondence").click(function () {
+        $(".correspondence").css({"color" : "rgb(65, 113, 255)"});
+        $(".notice").css({"color" : "black"});
+        $(".notice_2").css({"display" : "block"});
+        $(".notice_1").css({"display" : "none"});
+    });
+
+    $(".sub_img").click(function () {
+        $(".sun_popup").css({});
+    })
 });
