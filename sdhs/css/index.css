@@ -9,10 +9,10 @@ ul > #input{float: right;}
 #input{height: 34px;}
 #plus{height: 38px; float: right;}
 
-.nav{width: 1000px; height: 45px;border-top: 2px solid black;border-bottom: 2px solid black; color: black;}
-.nav > li{width: 125px; height: 45px;float: left;text-align: center;line-height: 45px;font-family: 돋음;}
-.nav > li >ul{width: 125px;height: 0px;overflow: hidden;transition: 1.0s;}
-.nav > li:hover>ul{height:225px;}
+.nav{width: 1000px; height: 45px;border-top: 1px solid black;border-bottom: 2px solid black; color: black; position: relative;font-weight: bold;font-family: 돋음;}
+.nav > li{width: 125px; height: 45px;float: left;text-align: center;line-height: 45px;}
+.nav > li >ul{width: 125px;height: 0px;overflow: hidden;transition: 1s;overflow: hidden;}
+.nav > li:hover>ul{height:405px;}
 .nav > li > ul >li{width: 123px;height: 43px; text-align: center;background-color:white;border: 1px solid black;}
 .border{border-bottom-left-radius: 15%;border-bottom-right-radius: 15%;}
 
@@ -51,11 +51,18 @@ td{height: 33px;}
 .calendar_date{font-size: 14px;}
 .date_middle {float: left;width: 100%;height: 145px;}
 .todate{font-size: 90px;width: 100px;float: left;text-align: center;}
-.prev_box {float: left;width: 100px;height: 120px;text-align: center;line-height: 130px;}
-.next_box {float: left;width: 100px;height: 120px;text-align: center;line-height: 125px;}
+.prev_box {float: left;width: 100px;height: 120px;text-align: center;line-height: 130px;cursor: pointer;}
+.next_box {float: left;width: 100px;height: 120px;text-align: center;line-height: 125px;cursor: pointer;}
 .date-footer > p{text-align: center;font-size: 18px;}
+
+.pop_sec{width: 960px; height: 480px; position: absolute; z-index: 100; top: 320px; display: none; border: 1px solid black; left: 50%; margin-left: -480px; background-color: white; }
+.pop_sec button{width: 50px; height: 30px; display:block;position: absolute;margin-left: 910px;background-color: white;}
+.meal_pop{width: 500px; height: 300px; position: absolute; z-index: 100; top: 350px; display: none; border: 1px solid black; left: 50%; margin-left: -260px; background-color: white;background-color: white;}
+.meal_pop > img{width: 500px;height: 250px;}
+.meal_pop button{width: 50px; height: 30px; display:block;position: absolute;margin-left: 220px;top: 260px;background-color: white;}
+
 
 
 footer{background-color: #e5e6e8;width: auto;height: 100px;}
 .footer_img{padding: 25px;float: left;margin-left: 450px;}
-.footer_sec{text-align: center;color: black;margin-right: 500px;padding: 25px;}
+.footer_sec{text-align: center;color: black;margin-right: 500px;padding: 15px;}
